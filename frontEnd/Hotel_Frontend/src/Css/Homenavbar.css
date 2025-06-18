@@ -1,0 +1,41 @@
+.homenavbarcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.homenavbar-input,
+.homenavbar-select {
+  padding: 10px 14px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  min-width: 150px;
+  transition: border-color 0.2s ease;
+}
+
+.homenavbar-input:focus,
+.homenavbar-select:focus {
+  border-color: #007bff;
+}
+
+.homenavbar-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.homenavbar-button:hover {
+  background-color: #0056b3;
+}
