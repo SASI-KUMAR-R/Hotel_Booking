@@ -1,0 +1,115 @@
+/* Home Page Container */
+.homepagecontainre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Offer Section Container */
+.homepageoffer {
+    display: flex;
+    flex-direction: row; /* Side by side */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px; /* Space between offers */
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px;
+    flex-wrap: wrap; /* Wrap on small screens */
+    box-sizing: border-box;
+}
+
+/* First Offer Box */
+.offerone {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.offerone:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Second Offer Box */
+.offertwo {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.offertwo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+.offerh1, .offerh2 {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Paragraphs */
+.offerpara, .offerpara2 {
+    font-size: 1.1rem;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.offerbutton, .offerbutton2 {
+    background-color: #0071c2;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.offerbutton:hover, .offerbutton2:hover {
+    background-color: #005fa3;
+}
+
+/* Images */
+.offerimage, .offerimage2 {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Responsive - Stack on Mobile */
+@media (max-width: 900px) {
+    .homepageoffer {
+        flex-direction: column;
+        align-items: center;
+    }
+}

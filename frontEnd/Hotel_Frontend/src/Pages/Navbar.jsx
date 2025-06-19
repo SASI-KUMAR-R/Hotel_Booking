@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-container">
-        <h5 className="logo" onClick={()=>{navigate("/")}}>STAYS_BOOKS</h5>
+        <h5 className="logo" onClick={()=>{navigate("/")}}>STAYS.COM</h5>
         <ul className="nav-links">
           <li className="nav-item" onClick={handleclick}>LOGIN</li>
           <li className="nav-item">LOGOUT</li>

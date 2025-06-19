@@ -4,6 +4,7 @@ import Home from './Pages/Home'
 import Navbar from './Pages/Navbar'
 import Login from './Pages/Login'
 import Provider from './Pages/Provider'
+import HotelListing from './Pages/HotelListing'
 const App = () => {
   return (
     <BrowserRouter>
@@ -12,6 +13,7 @@ const App = () => {
       <Route path='/' element={<Home/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/provider' element={<Provider/>}/>
+      <Route path='/hotellisting' element={<HotelListing/>}/>
     </Routes>
     </BrowserRouter>
   )
