@@ -1,26 +1,39 @@
 .homenavbarcontainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* horizontal alignment */
   align-items: center;
+  justify-content: center;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: #f5f7fa; /* light modern background */
+  border-radius: 16px;
+  gap: 15px; /* spacing between items */
+  margin: 20px auto; /* center the navbar horizontally */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* allow wrap on small screens */
 }
 
 .homenavbar-input {
-  margin: 10px;
-  padding: 8px;
-  width: 250px;
-  border-radius: 5px;
+  padding: 12px 16px;
   border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.homenavbar-input:focus {
+  border-color: #007bff; /* blue border on focus */
 }
 
 .homenavbar-button {
-  padding: 10px 20px;
+  padding: 12px 16px;
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .homenavbar-button:hover {

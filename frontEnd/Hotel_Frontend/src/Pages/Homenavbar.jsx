@@ -3,9 +3,18 @@ import { useNavigate } from 'react-router-dom';
 import '../Css/Homenavbar.css';
 
 const Homenavbar = () => {
+  const today = new Date();
+  const tomorrow = new Date();
+  tomorrow.setDate(today.getDate() + 1);
+
+  const formatDate = (date) => {
+    return date.toISOString().split('T')[0];
+  };
+
   const [location, setLocation] = useState('');
-  const [checkIn, setCheckIn] = useState('');
-  const [checkOut, setCheckOut] = useState('');
+  const [checkIn, setCheckIn] = useState(formatDate(today));
+  const [checkOut, setCheckOut] = useState(formatDate(tomorrow));
+
   const navigate = useNavigate();
 
   const handleSearch = () => {
