@@ -2,8 +2,12 @@ import React from 'react'
 import Homenavbar from "../Pages/Homenavbar"
 import "../Css/Home.css"
 import { useNavigate } from 'react-router-dom'
+import { useAuth } from '../Pages/AuthContext';
+
 const Home = () => {
   const navigate = useNavigate();
+  const { isLoggedIn } = useAuth();
+  
   const handleClick = () => {
     navigate("/hotellisting");
   }
